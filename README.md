@@ -34,8 +34,9 @@ This plugin allows you to use either Heartland eCommerce or Global Payments eCom
 ##### `publicApiKey` - `string`
 
 > Note: Applies to Heartland eCommerce only.
+> Note: Retreive keys from Developer Portal: https://developer.heartlandpaymentsystems.com/
 
-The public API key associated with the merchant account. This API key is tied to a specific merchant/teminal account combination at Heartland and requires a matching secret API key to consume this value.
+The public API key associated with the merchant account. This API key is tied to a specific merchant/teminal account combination at Heartland and requires a matching secret API key to consume this value. Go to 
 
 ##### `merchantId` - `string`
 

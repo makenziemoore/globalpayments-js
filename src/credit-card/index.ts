@@ -7,23 +7,23 @@ import UIForm, { fieldStyles, IUIFormOptions, parentStyles } from "../ui/form";
 
 export const defaultOptions: IUIFormOptions = {
   labels: {
-    "card-cvv": "Card CVV:",
-    "card-expiration": "Card Expiration:",
-    "card-holder-name": "Card Holder Name:",
-    "card-number": "Card Number:",
+    "card-cvv": "Security Code",
+    "card-expiration": "Card Expiration",
+    "card-holder-name": "Name on Card",
+    "card-number": "Card Number",
   },
   placeholders: {
-    "card-cvv": "•••",
+    "card-cvv": "3 or 4 Digit Code",
     "card-expiration": "MM / YYYY",
-    "card-holder-name": "Jane Smith",
-    "card-number": "•••• •••• •••• ••••",
+    "card-holder-name": "Name On Card",
+    "card-number": "Card Number",
   },
   prefix: "credit-card-",
   style: "default",
   values: {
     "card-track": "Read Card",
     // tslint:disable-next-line:object-literal-key-quotes
-    submit: "Submit",
+    submit: "Checkout",
   },
 };
 

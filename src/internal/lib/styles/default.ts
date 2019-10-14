@@ -1,4 +1,5 @@
 import assetBaseUrl from "../asset-base-url";
+import { Z_BLOCK } from 'zlib';
 
 // tslint:disable:object-literal-key-quotes
 // tslint:disable:object-literal-sort-keys
@@ -21,7 +22,6 @@ export const fieldStyles = {
     display: "block",
     "font-family": "sans-serif",
     "font-size": "14px",
-    height: "50px",
     "line-height": "1.42857143",
     margin: "0 .5em 0 0",
     "max-width": "100%",
@@ -34,7 +34,6 @@ export const fieldStyles = {
   "#secure-payment-field:focus": {
     border: "1px solid #3989e3",
     "box-shadow": "none",
-    height: "50px",
     outline: "none",
   },
   "#secure-payment-field[type=button]": {
@@ -136,6 +135,13 @@ export const fieldStyles = {
   "input[placeholder]": {
     "letter-spacing": "3px",
   },
+  ".sandbox-warning": {
+    "box-sizing": "border-box",
+    display: "block",
+    "margin-bottom": "5px",
+    "text-align": "center",
+    width: "100%"
+  }
 };
 
 export const parentStyles = {
@@ -174,5 +180,5 @@ export const parentStyles = {
     display: "block",
     margin: "10px auto",
     width: "300px",
-  },
+  }
 };

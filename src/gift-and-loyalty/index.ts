@@ -22,7 +22,7 @@ export const defaultOptions: IUIFormOptions = {
     pin: "••••",
   },
   prefix: "gift-and-loyalty-",
-  style: "default",
+  style: "simple",
   values: {
     submit: "Submit",
   },

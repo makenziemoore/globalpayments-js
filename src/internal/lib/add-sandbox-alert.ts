@@ -14,17 +14,6 @@ export function addSandboxAlert(
   );
   el.appendChild(text);
   el.className = "sandbox-warning";
-  el.style.display = "block";
-  el.style.width = "100%";
-  el.style.marginBottom = "5px";
-  el.style.color = "#fff";
-  el.style.backgroundColor = "#770000";
-  el.style.padding = "8px 5px";
-  el.style.fontFamily = "Verdana";
-  el.style.fontWeight = "100";
-  el.style.fontSize = "12px";
-  el.style.textAlign = "center";
-  el.style.boxSizing = "border-box";
 
   if (typeof target === "string") {
     const element = document.querySelector(target) as HTMLElement;

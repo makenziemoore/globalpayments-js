@@ -54,6 +54,7 @@ var GlobalPayments = (function () {
 			}
 		});
 	};
+	//# sourceMappingURL=unfetch.es.js.map
 
 	if (!window.fetch) window.fetch = index.default || index;
 
@@ -64,6 +65,7 @@ var GlobalPayments = (function () {
 	        }
 	    };
 	}
+	//# sourceMappingURL=array-foreach-polyfill.js.map
 
 	var toByteArray_1 = toByteArray;
 	var fromByteArray_1 = fromByteArray;
@@ -228,6 +230,7 @@ var GlobalPayments = (function () {
 	}
 	window.btoa = window.btoa || base64encode;
 	window.atob = window.atob || base64decode;
+	//# sourceMappingURL=base64-polyfill.js.map
 
 	/* -----------------------------------------------------------------------------
 	This file is based on or incorporates material from the projects listed below
@@ -650,8 +653,10 @@ var GlobalPayments = (function () {
 	        };
 	    }
 	})();
+	//# sourceMappingURL=json.js.map
 
 	window.JSON = window.JSON || JSON$1;
+	//# sourceMappingURL=json-polyfill.js.map
 
 	// ES5 15.2.3.9
 	// http://es5.github.com/#x15.2.3.9
@@ -682,6 +687,7 @@ var GlobalPayments = (function () {
 	        };
 	    })(Object.freeze);
 	}
+	//# sourceMappingURL=object-freeze-polyfill.js.map
 
 	if (!Object.prototype.hasOwnProperty) {
 	    Object.prototype.hasOwnProperty = function (prop) {
@@ -700,6 +706,7 @@ var GlobalPayments = (function () {
 	        return keys;
 	    };
 	}
+	//# sourceMappingURL=object-getownpropertynames-polyfill.js.map
 
 	// Store setTimeout reference so promise-polyfill will be unaffected by
 	// other code modifying setTimeout (like sinon.useFakeTimers())
@@ -943,6 +950,7 @@ var GlobalPayments = (function () {
 	var lib = Promise$1;
 
 	window.Promise = window.Promise || lib;
+	//# sourceMappingURL=promise-polyfill.js.map
 
 	if (!String.prototype.repeat) {
 	    String.prototype.repeat = function (length) {
@@ -953,6 +961,7 @@ var GlobalPayments = (function () {
 	        return result;
 	    };
 	}
+	//# sourceMappingURL=string-repeat-polyfill.js.map
 
 	/**
 	 * Adds an alert letting the user know they're in sandbox mode
@@ -965,17 +974,6 @@ var GlobalPayments = (function () {
 	    var text = document.createTextNode("This page is currently in sandbox/test mode. Do not use real/active card numbers.");
 	    el.appendChild(text);
 	    el.className = "sandbox-warning";
-	    el.style.display = "block";
-	    el.style.width = "100%";
-	    el.style.marginBottom = "5px";
-	    el.style.color = "#fff";
-	    el.style.backgroundColor = "#770000";
-	    el.style.padding = "8px 5px";
-	    el.style.fontFamily = "Verdana";
-	    el.style.fontWeight = "100";
-	    el.style.fontSize = "12px";
-	    el.style.textAlign = "center";
-	    el.style.boxSizing = "border-box";
 	    if (typeof target === "string") {
 	        var element = document.querySelector(target);
 	        if (!element) {
@@ -993,8 +991,10 @@ var GlobalPayments = (function () {
 	        target.insertBefore(el, target.firstChild);
 	    }
 	}
+	//# sourceMappingURL=add-sandbox-alert.js.map
 
 	var options = {};
+	//# sourceMappingURL=options.js.map
 
 	var actionNormalizeResponse = (function (data) {
 	    if (data.error && data.reasons) {
@@ -1041,6 +1041,7 @@ var GlobalPayments = (function () {
 	    };
 	    return response;
 	});
+	//# sourceMappingURL=action-normalize-response.js.map
 
 	/*! *****************************************************************************
 	Copyright (c) Microsoft Corporation. All rights reserved.
@@ -1157,6 +1158,7 @@ var GlobalPayments = (function () {
 	        }
 	    });
 	}); });
+	//# sourceMappingURL=action-tokenize.js.map
 
 	var actionValidateData = (function (data) {
 	    var errors = [];
@@ -1180,6 +1182,7 @@ var GlobalPayments = (function () {
 	    }
 	    return errors;
 	});
+	//# sourceMappingURL=action-validate-data.js.map
 
 	var supports = {
 	    apm: {
@@ -1215,6 +1218,7 @@ var GlobalPayments = (function () {
 	var getEnv = function () {
 	    return options.env || "production";
 	};
+	//# sourceMappingURL=index.js.map
 
 	var genius = /*#__PURE__*/Object.freeze({
 		supports: supports,
@@ -1291,8 +1295,10 @@ var GlobalPayments = (function () {
 	        requestId: atob(data.PASREF),
 	    };
 	});
+	//# sourceMappingURL=action-normalize-response.js.map
 
 	var loadedFrames = {};
+	//# sourceMappingURL=loaded-frames.js.map
 
 	var PostMessage = /** @class */ (function () {
 	    function PostMessage() {
@@ -1350,6 +1356,7 @@ var GlobalPayments = (function () {
 	    return PostMessage;
 	}());
 	var postMessage = new PostMessage();
+	//# sourceMappingURL=post-message.js.map
 
 	var _this$1 = undefined;
 	var setup = false;
@@ -1384,8 +1391,10 @@ var GlobalPayments = (function () {
 	        return [2 /*return*/];
 	    });
 	}); });
+	//# sourceMappingURL=action-setup.js.map
 
 	var paymentFieldId = "secure-payment-field";
+	//# sourceMappingURL=payment-field-id.js.map
 
 	var generateGuid = (function () {
 	    var S4 = function () {
@@ -1394,6 +1403,7 @@ var GlobalPayments = (function () {
 	    };
 	    return "" + S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4() + ")";
 	});
+	//# sourceMappingURL=generate-guid.js.map
 
 	var actionOnload = (function (url) {
 	    // build request
@@ -1522,6 +1532,7 @@ var GlobalPayments = (function () {
 	        });
 	    });
 	};
+	//# sourceMappingURL=action-onload.js.map
 
 	var _this$2 = undefined;
 	var actionTokenize$1 = (function (url, data) { return __awaiter(_this$2, void 0, void 0, function () {
@@ -1580,6 +1591,7 @@ var GlobalPayments = (function () {
 	        }
 	    });
 	}); });
+	//# sourceMappingURL=action-tokenize.js.map
 
 	var actionValidateData$1 = (function (data) {
 	    var errors = [];
@@ -1609,6 +1621,7 @@ var GlobalPayments = (function () {
 	    }
 	    return errors;
 	});
+	//# sourceMappingURL=action-validate-data.js.map
 
 	var supports$1 = {
 	    apm: {
@@ -1650,6 +1663,7 @@ var GlobalPayments = (function () {
 	    // "hash",
 	    "env",
 	];
+	//# sourceMappingURL=index.js.map
 
 	var globalpayments = /*#__PURE__*/Object.freeze({
 		supports: supports$1,
@@ -1693,6 +1707,7 @@ var GlobalPayments = (function () {
 	    }
 	    return response;
 	});
+	//# sourceMappingURL=action-normalize-response.js.map
 
 	var _this$3 = undefined;
 	var actionTokenize$2 = (function (url, data) { return __awaiter(_this$3, void 0, void 0, function () {
@@ -1758,6 +1773,7 @@ var GlobalPayments = (function () {
 	        }
 	    });
 	}); });
+	//# sourceMappingURL=action-tokenize.js.map
 
 	var actionValidateData$2 = (function (data) {
 	    var errors = [];
@@ -1783,6 +1799,7 @@ var GlobalPayments = (function () {
 	    }
 	    return errors;
 	});
+	//# sourceMappingURL=action-validate-data.js.map
 
 	var supports$2 = {
 	    apm: {
@@ -1834,6 +1851,7 @@ var GlobalPayments = (function () {
 	            return def;
 	    }
 	};
+	//# sourceMappingURL=index.js.map
 
 	var heartland = /*#__PURE__*/Object.freeze({
 		supports: supports$2,
@@ -1866,6 +1884,7 @@ var GlobalPayments = (function () {
 	    };
 	    return response;
 	});
+	//# sourceMappingURL=action-normalize-response.js.map
 
 	var actionTokenize$3 = (function (url, data) {
 	    var getRequest = function () {
@@ -1971,6 +1990,7 @@ var GlobalPayments = (function () {
 	        }
 	    });
 	});
+	//# sourceMappingURL=action-tokenize.js.map
 
 	var actionValidateData$3 = (function (data) {
 	    var errors = [];
@@ -1994,6 +2014,7 @@ var GlobalPayments = (function () {
 	    }
 	    return errors;
 	});
+	//# sourceMappingURL=action-validate-data.js.map
 
 	var supports$3 = {
 	    apm: {
@@ -2030,6 +2051,7 @@ var GlobalPayments = (function () {
 	var getEnv$3 = function () {
 	    return options.env || "production";
 	};
+	//# sourceMappingURL=index.js.map
 
 	var transit = /*#__PURE__*/Object.freeze({
 		supports: supports$3,
@@ -2045,6 +2067,7 @@ var GlobalPayments = (function () {
 	    heartland: heartland,
 	    transit: transit,
 	};
+	//# sourceMappingURL=index.js.map
 
 	var configHasAllRequiredSettings = function (settings) {
 	    var totalSettings = settings.length;
@@ -2069,6 +2092,7 @@ var GlobalPayments = (function () {
 	    }
 	    return undefined;
 	});
+	//# sourceMappingURL=get-gateway.js.map
 
 	/**
 	 * Creates a single object by merging a `source` (default) and `properties`
@@ -2095,6 +2119,7 @@ var GlobalPayments = (function () {
 	    }
 	    return destination;
 	}
+	//# sourceMappingURL=object-assign.js.map
 
 	/**
 	 * addStylesheet
@@ -2189,21 +2214,22 @@ var GlobalPayments = (function () {
 	    }
 	    return keys;
 	}
-
-	var version = "1.3.0";
+	//# sourceMappingURL=styles.js.map
 
 	var assetBaseUrl = (function () {
-	    var result = "https://api2.heartlandportico.com/SecureSubmit.v1/token/gp-" + version + "/";
-	    var gateway = getGateway();
-	    if (!gateway) {
-	        return result;
-	    }
-	    result =
-	        gateway.getEnv(options) === "sandbox"
-	            ? "https://hps.github.io/token/gp-" + version + "/"
-	            : result;
-	    return result;
+	    return "http://localhost:7777/dist/";
+	    // let result = `https://api2.heartlandportico.com/SecureSubmit.v1/token/gp-${version}/`;
+	    // const gateway = getGateway();
+	    // if (!gateway) {
+	    //   return result;
+	    // }
+	    // result =
+	    //   gateway.getEnv(options) === "sandbox"
+	    //     ? `https://hps.github.io/token/gp-${version}/`
+	    //     : result;
+	    // return result;
 	});
+	//# sourceMappingURL=asset-base-url.js.map
 
 	// tslint:disable:object-literal-key-quotes
 	// tslint:disable:object-literal-sort-keys
@@ -2222,7 +2248,6 @@ var GlobalPayments = (function () {
 	        display: "block",
 	        "font-family": "sans-serif",
 	        "font-size": "14px",
-	        height: "50px",
 	        "line-height": "1.42857143",
 	        margin: "0 .5em 0 0",
 	        "max-width": "100%",
@@ -2235,7 +2260,6 @@ var GlobalPayments = (function () {
 	    "#secure-payment-field:focus": {
 	        border: "1px solid #3989e3",
 	        "box-shadow": "none",
-	        height: "50px",
 	        outline: "none",
 	    },
 	    "#secure-payment-field[type=button]": {
@@ -2337,6 +2361,13 @@ var GlobalPayments = (function () {
 	    "input[placeholder]": {
 	        "letter-spacing": "3px",
 	    },
+	    ".sandbox-warning": {
+	        "box-sizing": "border-box",
+	        display: "block",
+	        "margin-bottom": "5px",
+	        "text-align": "center",
+	        width: "100%"
+	    }
 	};
 	var parentStyles = {
 	    ".secure-payment-form": {
@@ -2368,7 +2399,183 @@ var GlobalPayments = (function () {
 	        display: "block",
 	        margin: "10px auto",
 	        width: "300px",
+	    }
+	};
+	//# sourceMappingURL=default.js.map
+
+	// tslint:disable:object-literal-key-quotes
+	// tslint:disable:object-literal-sort-keys
+	var imageBase$1 = assetBaseUrl() + "images/";
+	var fieldStyles$1 = {
+	    "#secure-payment-field": {
+	        "-o-transition": "border-color ease-in-out .15s,box-shadow ease-in-out .15s",
+	        "-webkit-box-shadow": "inset 0 1px 1px rgba(0,0,0,.075)",
+	        "-webkit-transition": "border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s",
+	        "background-color": "#fff",
+	        border: "1px solid #cecece",
+	        "border-radius": "2px",
+	        "box-shadow": "none",
+	        "box-sizing": "border-box",
+	        display: "block",
+	        "font-family": "'Roboto', sans-serif",
+	        "font-size": "11px",
+	        "font-smoothing": "antialiased",
+	        height: "35px",
+	        margin: "5px 0 10px 0",
+	        "max-width": "100%",
+	        outline: "0",
+	        padding: "0 10px",
+	        transition: "border-color ease-in-out .15s,box-shadow ease-in-out .15s",
+	        "vertical-align": "baseline",
+	        width: "100%"
 	    },
+	    "#secure-payment-field:focus": {
+	        border: "1px solid lightblue",
+	        "box-shadow": "0 1px 3px 0 #cecece",
+	        outline: "none"
+	    },
+	    "#secure-payment-field[type=button]": {
+	        "-moz-user-select": "none",
+	        "-ms-touch-action": "manipulation",
+	        "-ms-user-select": "none",
+	        "-webkit-user-select": "none",
+	        background: "transparent url(" + imageBase$1 + "lock-solid.svg) no-repeat 35% center",
+	        "background-color": "#ffffff",
+	        "background-size": "15px",
+	        border: "1px solid #111",
+	        "box-sizing": "border-box",
+	        color: "#000",
+	        cursor: "pointer",
+	        display: "inline-block",
+	        "font-size": "13px",
+	        "font-weight": "500",
+	        "margin-bottom": "0",
+	        padding: "0 5%",
+	        "text-align": "center",
+	        "text-transform": "none",
+	        "touch-action": "manipulation",
+	        "user-select": "none",
+	        "vertical-align": "middle",
+	        "white-space": "nowrap"
+	    },
+	    "#secure-payment-field[type=button]:focus": {
+	        "background-color": "#fff",
+	        border: "1px solid lightblue",
+	        "box-shadow": "0 1px 3px 0 #cecece",
+	        color: "#000",
+	        outline: "none"
+	    },
+	    "#secure-payment-field[type=button]:hover": {
+	        "background-color": "#fff",
+	        "box-shadow": "0 1px 3px 0 #cecece"
+	    },
+	    ".card-cvv": {
+	        background: "transparent url(" + imageBase$1 + "cvv.png) no-repeat right",
+	        "background-size": "60px"
+	    },
+	    ".card-cvv.card-type-amex": {
+	        background: "transparent url(" + imageBase$1 + "cvv-amex.png) no-repeat right",
+	        "background-size": "60px"
+	    },
+	    ".card-number": {
+	        background: "transparent url(" + imageBase$1 + "logo-unknown@2x.png) no-repeat right",
+	        "background-size": "52px"
+	    },
+	    ".card-number.invalid.card-type-amex": {
+	        background: "transparent url(" + imageBase$1 + "amex-invalid.svg) no-repeat right center",
+	        "background-position-x": "98%",
+	        "background-size": "38px"
+	    },
+	    ".card-number.invalid.card-type-discover": {
+	        background: "transparent url(" + imageBase$1 + "discover-invalid.svg) no-repeat right center",
+	        "background-position-x": "98%",
+	        "background-size": "60px"
+	    },
+	    ".card-number.invalid.card-type-jcb": {
+	        background: "transparent url(" + imageBase$1 + "jcb-invalid.svg) no-repeat right center",
+	        "background-position-x": "98%",
+	        "background-size": "38px"
+	    },
+	    ".card-number.invalid.card-type-mastercard": {
+	        background: "transparent url(" + imageBase$1 + "mastercard-invalid.svg) no-repeat right center",
+	        "background-position-x": "98%",
+	        "background-size": "40px"
+	    },
+	    ".card-number.invalid.card-type-visa": {
+	        background: "transparent url(" + imageBase$1 + "visa-invalid.svg) no-repeat center",
+	        "background-position-x": "98%",
+	        "background-size": "50px"
+	    },
+	    ".card-number.valid.card-type-amex": {
+	        background: "transparent url(" + imageBase$1 + "amex.svg) no-repeat right center",
+	        "background-position-x": "98%",
+	        "background-size": "38px"
+	    },
+	    ".card-number.valid.card-type-discover": {
+	        background: "transparent url(" + imageBase$1 + "discover.svg) no-repeat right center",
+	        "background-position-x": "98%",
+	        "background-size": "60px"
+	    },
+	    ".card-number.valid.card-type-jcb": {
+	        background: "transparent url(" + imageBase$1 + "jcb.svg) no-repeat right center",
+	        "background-position-x": "98%",
+	        "background-size": "38px"
+	    },
+	    ".card-number.valid.card-type-mastercard": {
+	        background: "transparent url(" + imageBase$1 + "mastercard.svg) no-repeat center",
+	        "background-position-x": "98%",
+	        "background-size": "40px"
+	    },
+	    ".card-number.valid.card-type-visa": {
+	        background: "transparent url(" + imageBase$1 + "visa.svg) no-repeat right center",
+	        "background-position-x": "98%",
+	        "background-size": "50px"
+	    },
+	    ".card-number::-ms-clear": {
+	        display: "none",
+	    },
+	    "input[placeholder]": {
+	        "letter-spacing": ".5px",
+	    },
+	};
+	var parentStyles$1 = {
+	    ".secure-payment-form": {
+	        "font-family": "'Roboto', sans-serif",
+	    },
+	    ".secure-payment-form iframe": {
+	        width: "100%"
+	    },
+	    ".secure-payment-form label": {
+	        color: "#000",
+	        "font-size": "12px",
+	        "font-weight": "600"
+	    },
+	    ".secure-payment-form #ss-banner": {
+	        background: "transparent url(" + imageBase$1 + "shield-and-logos@2x.png) no-repeat left center",
+	        "background-size": "280px 34px",
+	        height: "40px",
+	        "margin-bottom": "7px",
+	    },
+	    ".secure-payment-form div": {
+	        display: "block",
+	    },
+	    ".secure-payment-form .form-row": {
+	        "margin-top": "10px",
+	    },
+	    ".secure-payment-form .form-wrapper": {
+	        display: "block",
+	        margin: "10px auto",
+	        width: "300px",
+	    },
+	    ".sandbox-warning": {
+	        "background-color": "#ffebeb",
+	        border: "1px solid red",
+	        color: "#e20000",
+	        "font-size": "11px",
+	        padding: "6px",
+	        "margin-top": "-1px",
+	        "text-align": "center"
+	    }
 	};
 
 	/// see https://gist.github.com/mudge/5830382
@@ -2438,6 +2645,7 @@ var GlobalPayments = (function () {
 	    };
 	    return EventEmitter;
 	}());
+	//# sourceMappingURL=event-emitter.js.map
 
 	var buildUrl = (function (queryString) {
 	    var gateway = getGateway();
@@ -2456,6 +2664,7 @@ var GlobalPayments = (function () {
 	    }
 	    return base + query;
 	});
+	//# sourceMappingURL=build-tokenization-url.js.map
 
 	/**
 	 * typeByNumber
@@ -2581,6 +2790,7 @@ var GlobalPayments = (function () {
 	        regex: /^[0-9]/,
 	    },
 	];
+	//# sourceMappingURL=card-types.js.map
 
 	var tokenize = (function (data) {
 	    var gateway = getGateway();
@@ -2659,8 +2869,10 @@ var GlobalPayments = (function () {
 	        })["catch"](reject);
 	    });
 	});
+	//# sourceMappingURL=tokenize.js.map
 
 	var bus = new EventEmitter();
+	//# sourceMappingURL=index.js.map
 
 	var internal = /*#__PURE__*/Object.freeze({
 		bus: bus,
@@ -2690,6 +2902,7 @@ var GlobalPayments = (function () {
 	    };
 	    return CardNumber;
 	}());
+	//# sourceMappingURL=card-number.js.map
 
 	var Expiration = /** @class */ (function () {
 	    function Expiration() {
@@ -2730,6 +2943,7 @@ var GlobalPayments = (function () {
 	    };
 	    return Expiration;
 	}());
+	//# sourceMappingURL=expiration.js.map
 
 	var CardNumber$1 = /** @class */ (function () {
 	    function CardNumber() {
@@ -2747,6 +2961,7 @@ var GlobalPayments = (function () {
 	    };
 	    return CardNumber;
 	}());
+	//# sourceMappingURL=card-number.js.map
 
 	var Cvv = /** @class */ (function () {
 	    function Cvv() {
@@ -2769,6 +2984,7 @@ var GlobalPayments = (function () {
 	    };
 	    return Cvv;
 	}());
+	//# sourceMappingURL=cvv.js.map
 
 	var Expiration$1 = /** @class */ (function () {
 	    function Expiration() {
@@ -2811,6 +3027,7 @@ var GlobalPayments = (function () {
 	    };
 	    return Expiration;
 	}());
+	//# sourceMappingURL=expiration.js.map
 
 	var Ev = /** @class */ (function () {
 	    function Ev() {
@@ -2856,6 +3073,7 @@ var GlobalPayments = (function () {
 	    };
 	    return Ev;
 	}());
+	//# sourceMappingURL=ev.js.map
 
 	var Events = /** @class */ (function () {
 	    function Events() {
@@ -2934,6 +3152,7 @@ var GlobalPayments = (function () {
 	    };
 	    return Events;
 	}());
+	//# sourceMappingURL=events.js.map
 
 	var Card = /** @class */ (function () {
 	    function Card() {
@@ -3353,6 +3572,7 @@ var GlobalPayments = (function () {
 	        return -1;
 	    };
 	}
+	//# sourceMappingURL=card.js.map
 
 	var actionAccumulateDataAndTokenize = (function (id, type, data) {
 	    if (type !== "card-number" && type !== "account-number") {
@@ -3399,6 +3619,9 @@ var GlobalPayments = (function () {
 	        });
 	    }
 	});
+	//# sourceMappingURL=action-accumulate-data-and-tokenize.js.map
+
+	//# sourceMappingURL=action-add-stylesheet.js.map
 
 	var actionCardTrackButtonClick = (function (id) {
 	    var el = document.getElementById(paymentFieldId + "-data");
@@ -3463,6 +3686,7 @@ var GlobalPayments = (function () {
 	        });
 	    });
 	});
+	//# sourceMappingURL=action-card-track-button-click.js.map
 
 	var _this$4 = undefined;
 	var actionPaymentRequestComplete = (function (id, data) { return __awaiter(_this$4, void 0, void 0, function () {
@@ -3498,6 +3722,7 @@ var GlobalPayments = (function () {
 	        return [2 /*return*/];
 	    });
 	}); });
+	//# sourceMappingURL=action-payment-request-complete.js.map
 
 	var _this$5 = undefined;
 	var actionPaymentRequestStart = (function (id, data) { return __awaiter(_this$5, void 0, void 0, function () {
@@ -3577,6 +3802,7 @@ var GlobalPayments = (function () {
 	        }
 	    });
 	}); });
+	//# sourceMappingURL=action-payment-request-start.js.map
 
 	var actionRequestData = (function (id, type, data) {
 	    if (!window.dataReceivedFields) {
@@ -3600,6 +3826,7 @@ var GlobalPayments = (function () {
 	        type: "ui:iframe-field:pass-data",
 	    }, "parent");
 	});
+	//# sourceMappingURL=action-request-data.js.map
 
 	var actionSetCardType = (function (cardType) {
 	    var el = document.getElementById(paymentFieldId);
@@ -3621,6 +3848,7 @@ var GlobalPayments = (function () {
 	    }
 	    el.className = classList.join(" ");
 	});
+	//# sourceMappingURL=action-set-card-type.js.map
 
 	var actionSetFocus = (function () {
 	    var el = document.getElementById(paymentFieldId);
@@ -3629,6 +3857,7 @@ var GlobalPayments = (function () {
 	    }
 	    el.focus();
 	});
+	//# sourceMappingURL=action-set-focus.js.map
 
 	/**
 	 * Escapes all potentially dangerous characters, so that the
@@ -3652,6 +3881,7 @@ var GlobalPayments = (function () {
 	        .replace(/</g, "&lt;")
 	        .replace(/>/g, "&gt;");
 	}
+	//# sourceMappingURL=encode-entities.js.map
 
 	var actionSetPlaceholder = (function (placeholder) {
 	    var el = document.getElementById(paymentFieldId);
@@ -3669,6 +3899,7 @@ var GlobalPayments = (function () {
 	        el.setAttribute("placeholder", encodeEntities(placeholder));
 	    }
 	});
+	//# sourceMappingURL=action-set-placeholder.js.map
 
 	var actionSetText = (function (text) {
 	    var el = document.getElementById(paymentFieldId);
@@ -3677,6 +3908,7 @@ var GlobalPayments = (function () {
 	    }
 	    el.textContent = encodeEntities(text);
 	});
+	//# sourceMappingURL=action-set-text.js.map
 
 	var actionSetValue = (function (text) {
 	    var el = document.getElementById(paymentFieldId);
@@ -3685,6 +3917,7 @@ var GlobalPayments = (function () {
 	    }
 	    el.setAttribute("value", encodeEntities(text));
 	});
+	//# sourceMappingURL=action-set-value.js.map
 
 	var IframeField = /** @class */ (function (_super) {
 	    __extends(IframeField, _super);
@@ -3785,7 +4018,7 @@ var GlobalPayments = (function () {
 	            input.appendChild(document.createTextNode(message));
 	        }
 	        else if (type === "button") {
-	            var message = "Submit";
+				var message = "Submit";
 	            input.appendChild(document.createTextNode(message));
 	        }
 	        var dest = document.getElementById(paymentFieldId + "-wrapper");
@@ -3965,14 +4198,17 @@ var GlobalPayments = (function () {
 	    };
 	    return IframeField;
 	}(EventEmitter));
+	//# sourceMappingURL=index.js.map
 
-	var fieldStyles$1 = {
+	var fieldStyles$2 = {
 	    blank: {},
 	    "default": fieldStyles,
+	    simple: fieldStyles$1,
 	};
-	var parentStyles$1 = {
+	var parentStyles$2 = {
 	    blank: {},
 	    "default": parentStyles,
+	    simple: parentStyles$1,
 	};
 	var frameFieldTypes = [
 	    "card-number",
@@ -4167,26 +4403,27 @@ var GlobalPayments = (function () {
 	        throw new Error("No field with the type `" + type + "` is currently available");
 	    }
 	}
+	//# sourceMappingURL=index.js.map
 
 	var defaultOptions = {
 	    labels: {
-	        "card-cvv": "Card CVV:",
-	        "card-expiration": "Card Expiration:",
-	        "card-holder-name": "Card Holder Name:",
-	        "card-number": "Card Number:",
+	        "card-cvv": "Security Code",
+	        "card-expiration": "Card Expiration",
+	        "card-holder-name": "Name on Card",
+	        "card-number": "Card Number",
 	    },
 	    placeholders: {
-	        "card-cvv": "•••",
+	        "card-cvv": "3 or 4 Digit Code",
 	        "card-expiration": "MM / YYYY",
-	        "card-holder-name": "Jane Smith",
-	        "card-number": "•••• •••• •••• ••••",
+	        "card-holder-name": "Name On Card",
+	        "card-number": "Card Number",
 	    },
 	    prefix: "credit-card-",
 	    style: "default",
 	    values: {
 	        "card-track": "Read Card",
 	        // tslint:disable-next-line:object-literal-key-quotes
-	        submit: "Submit",
+	        submit: "Checkout",
 	    },
 	};
 	function form(target, formOptions) {
@@ -4238,9 +4475,9 @@ var GlobalPayments = (function () {
 	    }
 	    // add any styles for the parent window
 	    if (formOptions.style) {
-	        addStylesheet(json2css(parentStyles$1[formOptions.style]), "secure-payment-styles-" + formOptions.style);
+	        addStylesheet(json2css(parentStyles$2[formOptions.style]), "secure-payment-styles-" + formOptions.style);
 	    }
-	    return new UIForm(fields, formOptions.style ? fieldStyles$1[formOptions.style] : {});
+	    return new UIForm(fields, formOptions.style ? fieldStyles$2[formOptions.style] : {});
 	}
 	function trackReaderForm(target, formOptions) {
 	    if (formOptions === void 0) { formOptions = {}; }
@@ -4286,10 +4523,11 @@ var GlobalPayments = (function () {
 	    }
 	    // add any styles for the parent window
 	    if (formOptions.style) {
-	        addStylesheet(json2css(parentStyles$1[formOptions.style]), "secure-payment-styles-" + formOptions.style);
+	        addStylesheet(json2css(parentStyles$2[formOptions.style]), "secure-payment-styles-" + formOptions.style);
 	    }
-	    return new UIForm(fields, formOptions.style ? fieldStyles$1[formOptions.style] : {});
+	    return new UIForm(fields, formOptions.style ? fieldStyles$2[formOptions.style] : {});
 	}
+	//# sourceMappingURL=index.js.map
 
 	var creditCard = /*#__PURE__*/Object.freeze({
 		defaultOptions: defaultOptions,
@@ -4397,10 +4635,11 @@ var GlobalPayments = (function () {
 	    }
 	    // add any styles for the parent window
 	    if (formOptions.style) {
-	        addStylesheet(json2css(parentStyles$1[formOptions.style]));
+	        addStylesheet(json2css(parentStyles$2[formOptions.style]));
 	    }
-	    return new UIForm(fields, formOptions.style ? fieldStyles$1[formOptions.style] : {});
+	    return new UIForm(fields, formOptions.style ? fieldStyles$2[formOptions.style] : {});
 	}
+	//# sourceMappingURL=index.js.map
 
 	var eCheck = /*#__PURE__*/Object.freeze({
 		defaultOptions: defaultOptions$1,
@@ -4419,7 +4658,7 @@ var GlobalPayments = (function () {
 	        pin: "••••",
 	    },
 	    prefix: "gift-and-loyalty-",
-	    style: "default",
+	    style: "simple",
 	    values: {
 	        submit: "Submit",
 	    },
@@ -4474,10 +4713,11 @@ var GlobalPayments = (function () {
 	    }
 	    // add any styles for the parent window
 	    if (formOptions.style) {
-	        addStylesheet(json2css(parentStyles$1[formOptions.style]));
+	        addStylesheet(json2css(parentStyles$2[formOptions.style]));
 	    }
-	    return new UIForm(fields, formOptions.style ? fieldStyles$1[formOptions.style] : {});
+	    return new UIForm(fields, formOptions.style ? fieldStyles$2[formOptions.style] : {});
 	}
+	//# sourceMappingURL=index.js.map
 
 	var giftAndLoyalty = /*#__PURE__*/Object.freeze({
 		defaultOptions: defaultOptions$2,
@@ -4497,6 +4737,7 @@ var GlobalPayments = (function () {
 	        }, frameId);
 	    }
 	});
+	//# sourceMappingURL=complete.js.map
 
 	function defaultInstruments() {
 	    return [{ supportedMethods: ["basic-card"] }];
@@ -4507,6 +4748,7 @@ var GlobalPayments = (function () {
 	function defaultOptions$3() {
 	    return {};
 	}
+	//# sourceMappingURL=defaults.js.map
 
 	var iframeHolderId = "global-pay-payment-request";
 	var PaymentRequestEmitter = /** @class */ (function (_super) {
@@ -4624,8 +4866,9 @@ var GlobalPayments = (function () {
 	        el.parentNode.removeChild(el);
 	    }
 	};
+	//# sourceMappingURL=setup.js.map
 
-
+	//# sourceMappingURL=index.js.map
 
 	var paymentRequest = /*#__PURE__*/Object.freeze({
 		complete: complete,
@@ -4643,10 +4886,12 @@ var GlobalPayments = (function () {
 	        gateway.actions.setup();
 	    }
 	});
+	//# sourceMappingURL=configure.js.map
 
 	function form$3(options) {
 	    return new UIForm(options.fields, options.styles || {});
 	}
+	//# sourceMappingURL=index.js.map
 
 	var ui = /*#__PURE__*/Object.freeze({
 		form: form$3,
@@ -4666,6 +4911,7 @@ var GlobalPayments = (function () {
 	    paymentRequest: paymentRequest,
 	    ui: ui,
 	};
+	//# sourceMappingURL=index.js.map
 
 	return index$1;
 
